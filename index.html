@@ -16,7 +16,6 @@ body {
     color: #111;
 }
 
-
 .header {
     background: #131921;
     color: white;
@@ -24,97 +23,52 @@ body {
     text-align: center;
 }
 
-
 .header h1 {
     margin: 0;
     font-size: 32px;
 }
-
 
 .header p {
     font-size: 20px;
     margin-top: 15px;
 }
 
-
-
 .container {
-
     max-width: 950px;
     margin: 30px auto;
     background: white;
     padding: 35px;
     text-align: center;
     border-radius: 10px;
-
 }
-
-
-
-.container h2 {
-
-    color: #131921;
-
-}
-
-
 
 .images {
-
     display: flex;
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
-
 }
-
-
 
 .card {
-
     width: 350px;
-
 }
 
-
-
 .card img {
-
     width: 100%;
     height: 250px;
     object-fit: cover;
     border-radius: 8px;
-
 }
-
-
-
-.card h2 {
-
-    margin-top: 15px;
-
-}
-
-
 
 .card p {
-
-    font-size: 16px;
     line-height: 1.5;
-
 }
 
-
-
 .form-box {
-
     margin-top: 40px;
     padding-top: 20px;
     border-top: 1px solid #ddd;
-
 }
-
-
 
 input, select {
 
@@ -127,11 +81,8 @@ input, select {
 
 }
 
-
-
 .button {
 
-    display: inline-block;
     margin-top: 25px;
     background: #ff9900;
     color: black;
@@ -144,15 +95,9 @@ input, select {
 
 }
 
-
-
 .button:hover {
-
     background: #e68a00;
-
 }
-
-
 
 .footer {
 
@@ -165,37 +110,26 @@ input, select {
 }
 
 
-
 @media(max-width:700px){
 
     .container {
-
         margin: 10px;
         padding: 20px;
-
     }
-
 
     .card {
-
         width: 100%;
-
     }
 
-
     .header h1 {
-
         font-size: 25px;
-
     }
 
 }
 
-
 </style>
 
 </head>
-
 
 
 <body>
@@ -205,9 +139,7 @@ input, select {
 
 <h1>Werden Sie jetzt Amazon Partner! ⭐</h1>
 
-<p>
-Locker und Counter Standorte eröffnen
-</p>
+<p>Locker und Counter Standorte eröffnen</p>
 
 </div>
 
@@ -244,7 +176,6 @@ Zusätzliche Einnahmen ohne großen Aufwand.
 
 
 
-
 <div class="card">
 
 <img src="images/counter.jpg" alt="Amazon Counter">
@@ -264,25 +195,39 @@ durch Paketservices.
 
 
 
-
 <div class="form-box">
 
 
-<h2>
-Jetzt Partner werden
-</h2>
+<h2>Jetzt Partner werden</h2>
+
+
+<!-- Netlify hidden form detection -->
+
+<form name="amazon-partner" netlify hidden>
+
+<input type="text" name="Name">
+<input type="text" name="Firma">
+<input type="text" name="Ort">
+<input type="tel" name="Telefon">
+<input type="email" name="Email">
+
+<select name="Interesse">
+<option>Amazon Locker</option>
+<option>Amazon Counter</option>
+<option>Beides</option>
+</select>
+
+</form>
 
 
 
 <form 
 name="amazon-partner"
 method="POST"
-data-netlify="true"
-action="/danke.html">
+data-netlify="true">
 
 
 <input type="hidden" name="form-name" value="amazon-partner">
-
 
 
 <input 
@@ -292,13 +237,11 @@ placeholder="Ihr Name"
 required>
 
 
-
 <input
 type="text"
 name="Firma"
 placeholder="Firma / Geschäft"
 required>
-
 
 
 <input
@@ -308,7 +251,6 @@ placeholder="Standort (Stadt)"
 required>
 
 
-
 <input
 type="tel"
 name="Telefon"
@@ -316,13 +258,11 @@ placeholder="Telefonnummer"
 required>
 
 
-
 <input
 type="email"
 name="Email"
 placeholder="E-Mail Adresse"
 required>
-
 
 
 <select name="Interesse">
@@ -336,9 +276,7 @@ required>
 </select>
 
 
-
 <br>
-
 
 
 <button class="button" type="submit">
@@ -346,7 +284,6 @@ required>
 Anfrage senden
 
 </button>
-
 
 
 </form>
