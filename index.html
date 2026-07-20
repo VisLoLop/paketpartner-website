@@ -9,6 +9,10 @@
 
 <style>
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -19,60 +23,151 @@ body {
 .header {
     background: #131921;
     color: white;
-    padding: 35px 20px;
+    padding: 50px 20px;
     text-align: center;
 }
 
 .header h1 {
-    margin: 0;
-    font-size: 32px;
+    font-size: 38px;
+    margin-bottom: 15px;
 }
 
 .header p {
-    font-size: 20px;
-    margin-top: 15px;
+    font-size: 22px;
+    margin: 0;
 }
 
+
+.hero-button {
+    display: inline-block;
+    margin-top: 30px;
+    background: #ff9900;
+    color: #111;
+    padding: 16px 35px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+
 .container {
-    max-width: 950px;
-    margin: 30px auto;
+    max-width: 1100px;
+    margin: 35px auto;
     background: white;
-    padding: 35px;
-    text-align: center;
+    padding: 40px;
     border-radius: 10px;
 }
 
-.images {
+
+
+.section-title {
+    text-align: center;
+    color: #131921;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+
+
+.intro {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+
+.cards {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 25px;
     flex-wrap: wrap;
+    margin-top: 35px;
 }
+
 
 .card {
-    width: 350px;
+    width: 260px;
+    text-align: center;
 }
 
-.card img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
+
+.card h3 {
+    color: #131921;
 }
+
 
 .card p {
     line-height: 1.5;
 }
 
-.form-box {
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid #ddd;
+
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+    margin-top: 30px;
 }
+
+
+
+.image-card {
+    width: 400px;
+    text-align: center;
+}
+
+
+.image-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+.step {
+    width: 250px;
+    text-align: center;
+}
+
+
+
+.number {
+    background: #ff9900;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
+
+.form-box {
+    text-align: center;
+}
+
+
 
 input, select {
 
     width: 85%;
+    max-width: 500px;
     padding: 14px;
     margin: 8px;
     font-size: 16px;
@@ -81,51 +176,58 @@ input, select {
 
 }
 
-.button {
 
-    margin-top: 25px;
+
+button {
+
     background: #ff9900;
-    color: black;
-    padding: 15px 40px;
+    border: none;
+    padding: 16px 40px;
     font-size: 20px;
     font-weight: bold;
-    border: none;
-    border-radius: 5px;
     cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
 
 }
 
-.button:hover {
+
+
+button:hover {
     background: #e68a00;
 }
 
+
+
 .footer {
 
-    margin-top: 40px;
-    padding: 20px;
-    background: #131921;
-    color: white;
-    text-align: center;
+    background:#131921;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
 
 }
+
 
 
 @media(max-width:700px){
 
-    .container {
-        margin: 10px;
-        padding: 20px;
-    }
+.header h1 {
+    font-size:28px;
+}
 
-    .card {
-        width: 100%;
-    }
+.container {
+    margin:15px;
+    padding:25px;
+}
 
-    .header h1 {
-        font-size: 25px;
-    }
+.image-card {
+    width:100%;
+}
 
 }
+
 
 </style>
 
@@ -135,56 +237,229 @@ input, select {
 <body>
 
 
+
 <div class="header">
 
 <h1>Werden Sie jetzt Amazon Partner! ⭐</h1>
 
-<p>Locker und Counter Standorte eröffnen</p>
+<p>
+Bieten Sie Ihren Kunden Amazon Abholung direkt an Ihrem Standort an
+</p>
+
+<a href="#formular" class="hero-button">
+Jetzt Partner werden
+</a>
 
 </div>
+
 
 
 
 <div class="container">
 
 
-<h2>Neue Einnahmequelle für Ihr Geschäft</h2>
+<h2 class="section-title">
+Eine neue Möglichkeit für Ihr Geschäft
+</h2>
 
 
-<p>
-Werden Sie Amazon Abholpartner und bieten Sie Ihren Kunden
-eine praktische Paketlösung direkt vor Ort.
+<p class="intro">
+
+Wir unterstützen Unternehmen dabei, Amazon Partner zu werden und ihren Standort
+als praktische Abholstelle für Kunden anzubieten.
+
+Mit Amazon Locker oder Amazon Counter können Sie Ihren Kunden einen zusätzlichen
+Service bieten und gleichzeitig neue Möglichkeiten für Ihr Geschäft schaffen.
+
 </p>
 
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>💰 Zusätzliche Einnahmen</h3>
+
+<p>
+Nutzen Sie Ihren Standort als Amazon Partner und schaffen Sie eine weitere Einnahmequelle.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>👥 Mehr Kundenfrequenz</h3>
+
+<p>
+Paketabholungen können neue Kunden in Ihr Geschäft bringen.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>📦 Mehr Service</h3>
+
+<p>
+Bieten Sie Ihren Kunden eine praktische Lösung für ihre Pakete.
+</p>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<h2 class="section-title">
+Amazon Locker & Amazon Counter
+</h2>
 
 
 <div class="images">
 
 
-<div class="card">
+<div class="image-card">
 
 <img src="images/locker.jpg" alt="Amazon Locker">
 
-<h2>Amazon Locker</h2>
+<h3>Amazon Locker</h3>
 
 <p>
-Automatisierter Paket-Abholpunkt.
-Zusätzliche Einnahmen ohne großen Aufwand.
+Automatisierte Paketabholung für Kunden.
 </p>
 
 </div>
 
 
 
-<div class="card">
+<div class="image-card">
 
 <img src="images/counter.jpg" alt="Amazon Counter">
 
-<h2>Amazon Counter</h2>
+<h3>Amazon Counter</h3>
 
 <p>
-Mehr Kundenfrequenz und zusätzliche Einnahmen
-durch Paketservices.
+Persönliche Paketabholung direkt in Ihrem Geschäft.
+</p>
+
+</div>
+
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+<div class="container">
+
+
+<h2 class="section-title">
+Für welche Unternehmen geeignet?
+</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+<h3>🏪 Einzelhandel</h3>
+<p>
+Geschäfte mit regelmäßigem Kundenverkehr.
+</p>
+</div>
+
+
+<div class="card">
+<h3>⛽ Tankstellen</h3>
+<p>
+Ideal für Standorte mit langen Öffnungszeiten.
+</p>
+</div>
+
+
+<div class="card">
+<h3>🛒 Kioske & Shops</h3>
+<p>
+Zusätzlicher Service für lokale Kunden.
+</p>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="container">
+
+
+<h2 class="section-title">
+So funktioniert es
+</h2>
+
+
+<div class="steps">
+
+
+<div class="step">
+
+<div class="number">1</div>
+
+<h3>Anfrage senden</h3>
+
+<p>
+Füllen Sie das Formular aus.
+</p>
+
+</div>
+
+
+
+<div class="step">
+
+<div class="number">2</div>
+
+<h3>Standort prüfen</h3>
+
+<p>
+Ihr Standort wird geprüft.
+</p>
+
+</div>
+
+
+
+<div class="step">
+
+<div class="number">3</div>
+
+<h3>Amazon Partner werden</h3>
+
+<p>
+Starten Sie als Partnerstandort.
 </p>
 
 </div>
@@ -192,32 +467,20 @@ durch Paketservices.
 
 </div>
 
+</div>
 
 
 
-<div class="form-box">
 
 
-<h2>Jetzt Partner werden</h2>
 
 
-<!-- Netlify hidden form detection -->
+<div class="container form-box" id="formular">
 
-<form name="amazon-partner" netlify hidden>
 
-<input type="text" name="Name">
-<input type="text" name="Firma">
-<input type="text" name="Ort">
-<input type="tel" name="Telefon">
-<input type="email" name="Email">
-
-<select name="Interesse">
-<option>Amazon Locker</option>
-<option>Amazon Counter</option>
-<option>Beides</option>
-</select>
-
-</form>
+<h2 class="section-title">
+Jetzt unverbindlich anfragen
+</h2>
 
 
 
@@ -230,39 +493,20 @@ data-netlify="true">
 <input type="hidden" name="form-name" value="amazon-partner">
 
 
-<input 
-type="text"
-name="Name"
-placeholder="Ihr Name"
-required>
+<input type="text" name="Name" placeholder="Ihr Name" required>
 
 
-<input
-type="text"
-name="Firma"
-placeholder="Firma / Geschäft"
-required>
+<input type="text" name="Firma" placeholder="Firma / Geschäft" required>
 
 
-<input
-type="text"
-name="Ort"
-placeholder="Standort (Stadt)"
-required>
+<input type="text" name="Ort" placeholder="Standort (Stadt)" required>
 
 
-<input
-type="tel"
-name="Telefon"
-placeholder="Telefonnummer"
-required>
+<input type="tel" name="Telefon" placeholder="Telefonnummer" required>
 
 
-<input
-type="email"
-name="Email"
-placeholder="E-Mail Adresse"
-required>
+<input type="email" name="Email" placeholder="E-Mail Adresse" required>
+
 
 
 <select name="Interesse">
@@ -279,10 +523,8 @@ required>
 <br>
 
 
-<button class="button" type="submit">
-
+<button type="submit">
 Anfrage senden
-
 </button>
 
 
@@ -292,7 +534,6 @@ Anfrage senden
 </div>
 
 
-</div>
 
 
 
@@ -301,6 +542,7 @@ Anfrage senden
 Amazon Partner Programm
 
 </div>
+
 
 
 </body>
