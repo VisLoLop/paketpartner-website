@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Amazon Partner werden</title>
+<title>VAV Deutschland | Amazon Partner werden</title>
 
 <style>
 
@@ -23,178 +23,190 @@ body {
 .header {
     background: #131921;
     color: white;
-    padding: 50px 20px;
     text-align: center;
+    padding: 40px 20px;
 }
+
+
+.logo {
+    max-width: 180px;
+    margin-bottom: 20px;
+}
+
 
 .header h1 {
     font-size: 38px;
-    margin-bottom: 15px;
+    margin: 10px 0;
 }
+
 
 .header p {
     font-size: 22px;
-    margin: 0;
+    margin: 15px 0;
 }
 
 
-.hero-button {
+.button {
     display: inline-block;
-    margin-top: 30px;
     background: #ff9900;
     color: #111;
     padding: 16px 35px;
+    border-radius: 5px;
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
-    border-radius: 5px;
+    margin-top: 20px;
 }
 
 
+.button:hover {
+    background: #e68a00;
+}
+
 
 .container {
+
     max-width: 1100px;
     margin: 35px auto;
     background: white;
     padding: 40px;
     border-radius: 10px;
+
 }
 
 
+.title {
 
-.section-title {
-    text-align: center;
-    color: #131921;
-    font-size: 28px;
-    margin-bottom: 25px;
+    text-align:center;
+    color:#131921;
+    font-size:30px;
+    margin-bottom:25px;
+
 }
 
 
+.text {
 
-.intro {
-    text-align: center;
-    font-size: 18px;
-    line-height: 1.6;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+
 }
 
 
 
 .cards {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
-    margin-top: 35px;
+
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin-top:30px;
+
 }
 
 
+
 .card {
-    width: 260px;
-    text-align: center;
+
+    width:260px;
+    text-align:center;
+
 }
 
 
 .card h3 {
-    color: #131921;
-}
 
+    color:#131921;
 
-.card p {
-    line-height: 1.5;
 }
 
 
 
 .images {
-    display: flex;
-    justify-content: center;
-    gap: 35px;
-    flex-wrap: wrap;
-    margin-top: 30px;
+
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    flex-wrap:wrap;
+
 }
 
 
 
 .image-card {
-    width: 400px;
-    text-align: center;
+
+    width:400px;
+    text-align:center;
+
 }
 
 
+
 .image-card img {
-    width: 100%;
-    height: 260px;
-    object-fit: cover;
-    border-radius: 8px;
+
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    border-radius:8px;
+
 }
 
 
 
 .steps {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
+
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+
 }
+
 
 
 .step {
-    width: 250px;
-    text-align: center;
+
+    width:250px;
+    text-align:center;
+
 }
 
 
 
-.number {
-    background: #ff9900;
-    display: inline-block;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 50%;
-    font-weight: bold;
-    font-size: 22px;
-}
+.circle {
 
+    width:45px;
+    height:45px;
+    line-height:45px;
+    background:#ff9900;
+    border-radius:50%;
+    margin:auto;
+    font-weight:bold;
+    font-size:22px;
 
-
-.form-box {
-    text-align: center;
 }
 
 
 
 input, select {
 
-    width: 85%;
-    max-width: 500px;
-    padding: 14px;
-    margin: 8px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    width:85%;
+    max-width:500px;
+    padding:14px;
+    margin:8px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:16px;
 
 }
 
 
 
-button {
+.form {
 
-    background: #ff9900;
-    border: none;
-    padding: 16px 40px;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 20px;
+    text-align:center;
 
-}
-
-
-
-button:hover {
-    background: #e68a00;
 }
 
 
@@ -211,6 +223,15 @@ button:hover {
 
 
 
+.small {
+
+    font-size:13px;
+    opacity:0.8;
+
+}
+
+
+
 @media(max-width:700px){
 
 .header h1 {
@@ -218,12 +239,17 @@ button:hover {
 }
 
 .container {
+
     margin:15px;
     padding:25px;
+
 }
 
+
 .image-card {
+
     width:100%;
+
 }
 
 }
@@ -240,17 +266,28 @@ button:hover {
 
 <div class="header">
 
+
+<!-- Upload your logo later as images/logo.png -->
+
+<img src="images/logo.png" class="logo" alt="VAV Deutschland">
+
+
 <h1>Werden Sie jetzt Amazon Partner! ⭐</h1>
+
 
 <p>
 Bieten Sie Ihren Kunden Amazon Abholung direkt an Ihrem Standort an
 </p>
 
-<a href="#formular" class="hero-button">
-Jetzt Partner werden
+
+<a href="#formular" class="button">
+Kostenlose Standortprüfung anfragen
 </a>
 
+
 </div>
+
+
 
 
 
@@ -258,20 +295,36 @@ Jetzt Partner werden
 <div class="container">
 
 
-<h2 class="section-title">
-Eine neue Möglichkeit für Ihr Geschäft
+<h2 class="title">
+VAV Deutschland – Ihr Ansprechpartner für Amazon Partnerstandorte
 </h2>
 
 
-<p class="intro">
+<p class="text">
 
 Wir unterstützen Unternehmen dabei, Amazon Partner zu werden und ihren Standort
-als praktische Abholstelle für Kunden anzubieten.
+als praktische Paket-Abholstelle anzubieten.
 
-Mit Amazon Locker oder Amazon Counter können Sie Ihren Kunden einen zusätzlichen
-Service bieten und gleichzeitig neue Möglichkeiten für Ihr Geschäft schaffen.
+Gemeinsam prüfen wir die Möglichkeiten für Ihren Standort und begleiten Sie
+durch den Partnerprozess.
 
 </p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="container">
+
+
+<h2 class="title">
+Warum VAV Deutschland?
+</h2>
 
 
 
@@ -280,41 +333,46 @@ Service bieten und gleichzeitig neue Möglichkeiten für Ihr Geschäft schaffen.
 
 <div class="card">
 
-<h3>💰 Zusätzliche Einnahmen</h3>
+<h3>🤝 Persönliche Betreuung</h3>
 
 <p>
-Nutzen Sie Ihren Standort als Amazon Partner und schaffen Sie eine weitere Einnahmequelle.
+Ein direkter Ansprechpartner begleitet Sie bei Ihren Fragen rund um den Prozess.
 </p>
 
 </div>
+
 
 
 <div class="card">
 
-<h3>👥 Mehr Kundenfrequenz</h3>
+<h3>🏪 Fokus auf Unternehmen</h3>
 
 <p>
-Paketabholungen können neue Kunden in Ihr Geschäft bringen.
+Wir arbeiten mit lokalen Geschäften und Gewerbestandorten zusammen.
 </p>
 
 </div>
+
 
 
 <div class="card">
 
-<h3>📦 Mehr Service</h3>
+<h3>🚀 Einfacher Einstieg</h3>
 
 <p>
-Bieten Sie Ihren Kunden eine praktische Lösung für ihre Pakete.
+Unverbindliche Anfrage stellen und prüfen lassen, ob Ihr Standort geeignet ist.
 </p>
 
 </div>
 
 
+
 </div>
 
 
 </div>
+
+
 
 
 
@@ -323,7 +381,7 @@ Bieten Sie Ihren Kunden eine praktische Lösung für ihre Pakete.
 <div class="container">
 
 
-<h2 class="section-title">
+<h2 class="title">
 Amazon Locker & Amazon Counter
 </h2>
 
@@ -358,10 +416,12 @@ Persönliche Paketabholung direkt in Ihrem Geschäft.
 </div>
 
 
+</div>
+
 
 </div>
 
-</div>
+
 
 
 
@@ -371,18 +431,19 @@ Persönliche Paketabholung direkt in Ihrem Geschäft.
 <div class="container">
 
 
-<h2 class="section-title">
-Für welche Unternehmen geeignet?
+<h2 class="title">
+Für wen geeignet?
 </h2>
+
 
 
 <div class="cards">
 
 
 <div class="card">
-<h3>🏪 Einzelhandel</h3>
+<h3>🏪 Kioske</h3>
 <p>
-Geschäfte mit regelmäßigem Kundenverkehr.
+Erweitern Sie Ihr Angebot für Ihre Kunden.
 </p>
 </div>
 
@@ -390,15 +451,23 @@ Geschäfte mit regelmäßigem Kundenverkehr.
 <div class="card">
 <h3>⛽ Tankstellen</h3>
 <p>
-Ideal für Standorte mit langen Öffnungszeiten.
+Nutzen Sie Standorte mit hoher Kundenfrequenz.
 </p>
 </div>
 
 
 <div class="card">
-<h3>🛒 Kioske & Shops</h3>
+<h3>🛒 Einzelhandel</h3>
 <p>
-Zusätzlicher Service für lokale Kunden.
+Bieten Sie zusätzlichen Service an.
+</p>
+</div>
+
+
+<div class="card">
+<h3>🏬 Gewerbestandorte</h3>
+<p>
+Prüfen Sie Ihre Möglichkeiten als Partnerstandort.
 </p>
 </div>
 
@@ -407,6 +476,7 @@ Zusätzlicher Service für lokale Kunden.
 
 
 </div>
+
 
 
 
@@ -416,9 +486,10 @@ Zusätzlicher Service für lokale Kunden.
 <div class="container">
 
 
-<h2 class="section-title">
+<h2 class="title">
 So funktioniert es
 </h2>
+
 
 
 <div class="steps">
@@ -426,7 +497,7 @@ So funktioniert es
 
 <div class="step">
 
-<div class="number">1</div>
+<div class="circle">1</div>
 
 <h3>Anfrage senden</h3>
 
@@ -437,15 +508,14 @@ Füllen Sie das Formular aus.
 </div>
 
 
-
 <div class="step">
 
-<div class="number">2</div>
+<div class="circle">2</div>
 
 <h3>Standort prüfen</h3>
 
 <p>
-Ihr Standort wird geprüft.
+Wir prüfen die Möglichkeiten Ihres Standortes.
 </p>
 
 </div>
@@ -454,12 +524,12 @@ Ihr Standort wird geprüft.
 
 <div class="step">
 
-<div class="number">3</div>
+<div class="circle">3</div>
 
-<h3>Amazon Partner werden</h3>
+<h3>Partner werden</h3>
 
 <p>
-Starten Sie als Partnerstandort.
+Starten Sie den nächsten Schritt als Amazon Partnerstandort.
 </p>
 
 </div>
@@ -467,6 +537,7 @@ Starten Sie als Partnerstandort.
 
 </div>
 
+
 </div>
 
 
@@ -475,11 +546,11 @@ Starten Sie als Partnerstandort.
 
 
 
-<div class="container form-box" id="formular">
+<div class="container form" id="formular">
 
 
-<h2 class="section-title">
-Jetzt unverbindlich anfragen
+<h2 class="title">
+Kostenlose Standortprüfung anfragen
 </h2>
 
 
@@ -490,7 +561,9 @@ method="POST"
 data-netlify="true">
 
 
+
 <input type="hidden" name="form-name" value="amazon-partner">
+
 
 
 <input type="text" name="Name" placeholder="Ihr Name" required>
@@ -499,14 +572,13 @@ data-netlify="true">
 <input type="text" name="Firma" placeholder="Firma / Geschäft" required>
 
 
-<input type="text" name="Ort" placeholder="Standort (Stadt)" required>
+<input type="text" name="Ort" placeholder="Standort / Stadt" required>
 
 
 <input type="tel" name="Telefon" placeholder="Telefonnummer" required>
 
 
 <input type="email" name="Email" placeholder="E-Mail Adresse" required>
-
 
 
 <select name="Interesse">
@@ -523,9 +595,10 @@ data-netlify="true">
 <br>
 
 
-<button type="submit">
+<button class="button" type="submit">
 Anfrage senden
 </button>
+
 
 
 </form>
@@ -537,11 +610,22 @@ Anfrage senden
 
 
 
+
+
 <div class="footer">
 
-Amazon Partner Programm
+<strong>VAV Deutschland</strong>
+
+<p>
+Ihr Ansprechpartner für Amazon Partnerstandorte
+</p>
+
+<p class="small">
+VAV Deutschland ist kein Bestandteil der Amazon Unternehmensgruppe.
+</p>
 
 </div>
+
 
 
 
